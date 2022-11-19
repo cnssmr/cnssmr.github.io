@@ -5,12 +5,28 @@
         <title>My awesome online diary</title>
     
         <style>
-          body {font-family: Verdana, Geneva, Tahoma, sans-serif;}
-            
+          body {
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          margin:50px;
+          color:rgb(78, 56, 56);}
+          
+          #entry {
+          background-color: rgb(255,201,201);
+          padding:10px 10px 20px 10px;
+          }
+          
+          #intro {
+          background-color:rgb(255,201,201);
+          margin:10px;
+          }
+          
           h2 {
-            color:rgb(143, 29, 143);
-            font-family: Verdana, Geneva, Tahoma, sans-serif;}
-           
+          color:rgb(143, 29, 143);
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          }
+          
+          #img1 {margin-left:50px;}
+          
           #sun {
            position: fixed;
   animation-name: example;
@@ -21,7 +37,7 @@
 }
 
 @keyframes example {
-  0%   {left:90%; top:75%;}
+  0%   {left:90%; top:80%;}
 98% {left:90%; top:85%;}
   100% {left:90%; top:85%;}
 }
@@ -29,18 +45,18 @@
             .title1 {color:rgb(143, 29, 143);}
           
             p {
-                color:rgb(55, 46, 55);
+               ;
             }
         </style>
     </head>
     <body>
     
         <h2 class="title1">This website is awesome because...</h2>
-        <ul>
+        <ul id="intro">
             <li>I created it 
             <li>I am learning HTML and I get to try new things here!
             <li>I am so excited about it!!!
-            <li>It's <strong>pink</strong>. Come on, isn't that enough to make it awesome?
+            <li>It has a jumping sun on it. Come on, isn't that enough to make it awesome?
         </ul>
         
         <p class="title1"><strong>What is my goal here?</strong></p>
@@ -54,7 +70,7 @@
             <li>change the background
             <li>find an alternative font. this is truly hideous
         </ol>
-  <h3>November 19, 2022, Saturday</h3>
+  <div id=entry><h3>November 19, 2022, Saturday</h3>
   <p>
     I decided to use here as a kind of a diary. My experiment over on Tumblr is over, but I really
   liked keeping a journal everyday. Perhaps typing feels easier than writing sometimes. <br><br>
@@ -62,9 +78,9 @@
   is very exciting. My only concern is my current lack of knowledge around the code. But that's the 
   point of this website, isn't it? To learn, and to add the things that I've been learning so far here.
   <br><br> I still don't know how this will play out. There's SO much that I still don't know, it's overwhelming!<br><br>
-    Anyway, upwards and onwards!<br><br>
-<img src="https://i.kym-cdn.com/entries/icons/original/000/034/772/Untitled-1.png" height="250">
-      </p>
+    Anyway, onwards and upwards!<br><br>
+<img id=img1 src="https://i.kym-cdn.com/entries/icons/original/000/034/772/Untitled-1.png" height="250">
+    </p></div>
       
       <img id=sun src="https://www.vippng.com/png/detail/21-213944_sun-clipart-kawaii-cute-kawaii-sun-clipart.png" height="100">
     </body>
