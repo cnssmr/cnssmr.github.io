@@ -39,12 +39,20 @@
           
           #sun {
            position: fixed;
-  animation-name: example;
+  animation: example 1s infinite;
   animation-duration: 0.5s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;  
+  animation-direction: alternate-reverse; 
+animation-fill-mode: initial;
   overflow: hidden;
-         
+}
+  
+#sun1:hover {
+position: fixed;
+  animation: example1 0.09s infinite;
+  animation-direction: alternate-reverse; 
+animation-fill-mode: initial;
+  overflow: hidden;
+
 }
           #sun:hover:{opacity:0.5;}
 
@@ -53,7 +61,10 @@
 98% {left:90%; top:85%;}
   100% {left:90%; top:85%;}
 }
-            
+@keyframes example1 {
+from {transform: rotate(-25deg); left:90%; top:85%;} 
+to {transform: rotate(25deg); left:90%; top:85%;}   
+} 
             .title1 {color:rgb(143, 29, 143);}
           
             p {
