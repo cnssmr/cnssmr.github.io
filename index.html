@@ -11,7 +11,19 @@
             color:rgb(143, 29, 143);
             font-family: Verdana, Geneva, Tahoma, sans-serif;}
            
-            #text1 {color:rgb(27, 33, 209);}
+          #sun {
+           position: absolute;
+           animation-name: example;
+           animation-duration: 0.5s;
+           animation-iteration-count: infinite;
+           animation-direction: alternate;  
+            }
+
+        @keyframes example {
+        0%   {left:900px; top:900px;}
+        98% {left:900px; top:960px;}
+        100% {left:900px; top:960px;}
+        }
             
             .title1 {color:rgb(143, 29, 143);}
           
@@ -22,7 +34,7 @@
     </head>
     <body>
     
-        <h1 class="title1">This website is awesome because...</h1>
+        <h2 class="title1">This website is awesome because...</h2>
         <ul>
             <li>I created it 
             <li>I am learning HTML and I get to try new things here!
@@ -52,5 +64,7 @@
     Anyway, upwards and onwards!<br><br>
 <img src="https://i.kym-cdn.com/entries/icons/original/000/034/772/Untitled-1.png" height="250">
       </p>
+      
+      <img id=sun src="https://www.vippng.com/png/detail/21-213944_sun-clipart-kawaii-cute-kawaii-sun-clipart.png" height="150">
     </body>
 </html>
